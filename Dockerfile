@@ -1,4 +1,3 @@
-FROM node:16
 FROM wechaty/wechaty:next
 LABEL maintainer="Huan <zixia@zixia.net>"
 
