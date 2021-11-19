@@ -1,3 +1,4 @@
+FROM node:16
 FROM wechaty/wechaty:next
 LABEL maintainer="Huan <zixia@zixia.net>"
 
@@ -6,3 +7,16 @@ RUN cd /tmp \
   && tar zxvf ./gotty*.tar.gz \
   && rm -f gotty*.tar.gz \
   && mv gotty* /usr/local/bin
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["npm", "run", "start:wechat:web"]
