@@ -6,3 +6,5 @@ RUN cd /tmp \
   && tar zxvf ./gotty*.tar.gz \
   && rm -f gotty*.tar.gz \
   && mv gotty* /usr/local/bin
+
+ENTRYPOINT ["sleep", "infinity"]
