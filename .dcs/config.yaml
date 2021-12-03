@@ -1,0 +1,15 @@
+image:
+  dockerfile: ../dev.Dockerfile
+
+network:
+  - 8080:8080
+
+build:
+  command: npm install
+
+run:
+  command: npm run dev
+
+envs:
+  - name: KEY
+    value: VALUE
