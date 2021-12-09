@@ -1,5 +1,5 @@
 image:
-  dockerfile: ../dev.Dockerfile
+  registry: wechaty/wechaty
 
 network:
   - 8080:8080
