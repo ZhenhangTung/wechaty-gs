@@ -1,5 +1,5 @@
 image:
-  registry: wechaty/wechaty
+  registry: wechaty/wechaty:next
 
 network:
   - 8080:8080
