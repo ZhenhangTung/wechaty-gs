@@ -2,7 +2,7 @@ image:
   registry: wechaty/wechaty
 
 network:
-  # - 8080:8080
+  - 8080:8080
 
 build:
   command: npm install
